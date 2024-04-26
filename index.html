@@ -1,524 +1,146 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-  <!-- Basic -->
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <!-- Mobile Metas -->
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <!-- Site Metas -->
-  <meta name="keywords" content="" />
-  <meta name="description" content="" />
-  <meta name="author" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
 
-  <title>Neogym</title>
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 
-  <!-- slider stylesheet -->
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
 
-  <!-- bootstrap core css -->
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+html {
+  font-family: "Lucida Sans", sans-serif;
+}
 
-  <!-- fonts style -->
-  <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet">
-  <!-- Custom styles for this template -->
-  <link href="css/style.css" rel="stylesheet" />
-  <!-- responsive style -->
-  <link href="css/responsive.css" rel="stylesheet" />
+.header {
+  background-color: #9933cc;
+  color: #ffffff;
+  padding: 15px;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  padding: 8px;
+  margin-bottom: 7px;
+  background-color: #33b5e5;
+  color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.menu li:hover {
+  background-color: #0099cc;
+}
+
+.aside {
+  background-color: #33b5e5;
+  padding: 15px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 14px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.footer {
+  background-color: #0099cc;
+  color: #ffffff;
+  text-align: center;
+  font-size: 12px;
+  padding: 15px;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+</style>
 </head>
-
 <body>
-  <div class="hero_area">
-    <!-- header section strats -->
-    <header class="header_section">
-      <div class="container-fluid">
-        <nav class="navbar navbar-expand-lg custom_nav-container ">
-          <a class="navbar-brand" href="index.html">
-            <span>
-              Neogym
-            </span>
-          </a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
 
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
-              <ul class="navbar-nav  ">
-                <li class="nav-item active">
-                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item ">
-                  <a class="nav-link" href="why.html"> Why us </a>
-                </li>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="trainer.html"> trainers</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="contact.html"> Contact Us</a>
-                </li>
-              </ul>
-              <div class="user_option">
-                <form class="form-inline my-2 my-lg-0 ml-0 ml-lg-4 mb-3 mb-lg-0">
-                  <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit"></button>
-                </form>
-              </div>
-            </div>
-          </div>
-        </nav>
-      </div>
-    </header>
-    <!-- end header section -->
-    <!-- slider section -->
-    <section class=" slider_section position-relative">
-      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="container">
-              <div class="col-lg-10 col-md-11 mx-auto">
-                <div class="detail-box">
-                  <div>
-                    <h3>
-                      Fitness
-                    </h3>
-                    <h2>
-                      Training
-                    </h2>
-                    <h1>
-                      Neogym
-                    </h1>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse .
-                    </p>
-                    <div class="">
-                      <a href="">
-                        Contact Us
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="container">
-              <div class="col-lg-10 col-md-11 mx-auto">
-                <div class="detail-box">
-                  <div>
-                    <h3>
-                      Fitness
-                    </h3>
-                    <h2>
-                      Training
-                    </h2>
-                    <h1>
-                      Neogym
-                    </h1>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse .
-                    </p>
-                    <div class="">
-                      <a href="">
-                        Contact Us
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="container">
-              <div class="col-lg-10 col-md-11 mx-auto">
-                <div class="detail-box">
-                  <div>
-                    <h3>
-                      Fitness
-                    </h3>
-                    <h2>
-                      Training
-                    </h2>
-                    <h1>
-                      Neogym
-                    </h1>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse .
-                    </p>
-                    <div class="">
-                      <a href="">
-                        Contact Us
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="container">
-              <div class="col-lg-10 col-md-11 mx-auto">
-                <div class="detail-box">
-                  <div>
-                    <h3>
-                      Fitness
-                    </h3>
-                    <h2>
-                      Training
-                    </h2>
-                    <h1>
-                      Neogym
-                    </h1>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse .
-                    </p>
-                    <div class="">
-                      <a href="">
-                        Contact Us
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="container">
-              <div class="col-lg-10 col-md-11 mx-auto">
-                <div class="detail-box">
-                  <div>
-                    <h3>
-                      Fitness
-                    </h3>
-                    <h2>
-                      Training
-                    </h2>
-                    <h1>
-                      Neogym
-                    </h1>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse .
-                    </p>
-                    <div class="">
-                      <a href="">
-                        Contact Us
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <ol class="carousel-indicators">
-          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-        </ol>
-      </div>
-    </section>
-    <!-- end slider section -->
+<div class="header">
+  <h1>RUKUM EAST</h1>
+</div>
+
+<div class="row">
+  <div class="col-3 col-s-3 menu">
+    <ul>
+      <li>The Flight</li>
+      <li>The Mountatin</li>
+      <li>The Rivers</li>
+      <li>The Food</li>
+    </ul>
   </div>
 
+  <div class="col-6 col-s-9">
+    <h1>About</h1>
+    <p>Eastern Rukum (Nepali: पूर्वी रुकुम) is a mountain district of Lumbini Province of Nepal situated along the Dhaulagiri mountain range.[1][2] It is also the only mountain district of the province with its tallest mountain Putha Hiunchuli (Dhaulagiri VII) situated in the west end of Dhaulagiri II mountain chain, at an elevation of 7,246 meters.[3] The drainage source of ancient Airavati river, one of the five sacred rivers of Buddhism, lies in the lesser Himalayas of the district.[4] With a Dhaulagiri mountain range, lakes, rich Magar culture and its political history, Eastern Rukum has been among the top travel destinations of Nepal as designated by the Government of Nepal.[5][6]
 
-  <!-- Us section -->
+The district is known for having 52 ponds and 53 hills.[7] From 1996 to 2006, Eastern Rukum - a region with Magar majority - was one of the historical base area of the People's War of Nepal providing many foot soldiers, commanders, prominent leaders and martyrs during the war which in turn pivoted the country into a democratic Federal republic in 2008.[8] Guerilla trekking route has also been developed in the district as an adventure tourism following the past trails of the rebels in the base of Himalayas providing experiences of scenic landscapes, Dhaulagiri mountain ranges and rich Kham Magar culture.[9][10] In 2018, the district was labelled among the "fully literate" districts of the country, with a literacy rate of over 95%, showing a significant post-conflict development.[11][12] After Palpa district (53% Magar population), Eastern Rukum has the second largest Magar population in Nepal as a percentage of the total population (51% Magar population).[13]
 
-  <section class="us_section layout_padding">
-    <div class="container">
-      <div class="heading_container">
-        <h2>
-          Why Choose Us
-        </h2>
-      </div>
+Though successful in maintaining various levels of autonomy, independence and preservation of Kham Magar culture even during ancient and medieval Nepal, the region's structure were altered during the rule of Rana dynasty as well as during Panchayat era. Before 1975, substantial portion of Eastern Rukum was territorially merged with Palpa district during the Rana regime and with Baglung District during Panchayat.[14][15] On 20 September 2015, Eastern Rukum was created as a new district after the state's reconstruction of administrative divisions splitting Rukum District into Western Rukum and Eastern Rukum.</p>
+  </div>
 
-      <div class="us_container ">
-        <div class="row">
-          <div class="col-lg-3 col-md-6">
-            <div class="box">
-              <div class="img-box">
-                <img src="images/u-1.png" alt="">
-              </div>
-              <div class="detail-box">
-                <h5>
-                  QUALITY EQUIPMENT
-                </h5>
-                <p>
-                  ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="box">
-              <div class="img-box">
-                <img src="images/u-4.png" alt="">
-              </div>
-              <div class="detail-box">
-                <h5>
-                  NUTRITION
-                </h5>
-                <p>
-                  ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="box">
-              <div class="img-box">
-                <img src="images/u-2.png" alt="">
-              </div>
-              <div class="detail-box">
-                <h5>
-                  HEALTHY DIET PLAN
-                </h5>
-                <p>
-                  ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="box">
-              <div class="img-box">
-                <img src="images/u-3.png" alt="">
-              </div>
-              <div class="detail-box">
-                <h5>
-                  SPORT TRAINING
-                </h5>
-                <p>
-                  ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+  <div class="col-3 col-s-12">
+    <div class="aside">
+      <h2>What?</h2>
+      <p>Rukum is a district on the Lumbini Province of Nepal.</p>
+      <h2>Where?</h2>
+      <p>Sanoveri is a river in the sisne range.</p>
+      <h2>How?</h2>
+      <p>You can reach Rukum airport from Kathmandu and Nepalgunj.</p>
     </div>
-  </section>
+  </div>
+</div>
 
-  <!-- end us section -->
-
-
-  <!-- heathy section -->
-
-  <section class="heathy_section layout_padding">
-    <div class="container">
-
-      <div class="row">
-        <div class="col-md-12 mx-auto">
-          <div class="detail-box">
-            <h2>
-              HEALTHY MIND, HEALTHY BODY
-            </h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillumLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-            </p>
-            <div class="btn-box">
-              <a href="">
-                READ MORE
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- end heathy section -->
-
-  <!-- trainer section -->
-
-  <section class="trainer_section layout_padding">
-    <div class="container">
-      <div class="heading_container">
-        <h2>
-          Our Gym Trainers
-        </h2>
-      </div>
-      <div class="row">
-        <div class="col-lg-4 col-md-6 mx-auto">
-          <div class="box">
-            <div class="name">
-              <h5>
-                Smirth Jon
-              </h5>
-            </div>
-            <div class="img-box">
-              <img src="images/t1.jpg" alt="">
-            </div>
-            <div class="social_box">
-              <a href="">
-                <img src="images/facebook-logo.png" alt="">
-              </a>
-              <a href="">
-                <img src="images/twitter.png" alt="">
-              </a>
-              <a href="">
-                <img src="images/instagram-logo.png" alt="">
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 mx-auto">
-          <div class="box">
-            <div class="name">
-              <h5>
-                Jean Doe
-              </h5>
-            </div>
-            <div class="img-box">
-              <img src="images/t2.jpg" alt="">
-            </div>
-            <div class="social_box">
-              <a href="">
-                <img src="images/facebook-logo.png" alt="">
-              </a>
-              <a href="">
-                <img src="images/twitter.png" alt="">
-              </a>
-              <a href="">
-                <img src="images/instagram-logo.png" alt="">
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 mx-auto">
-          <div class="box">
-            <div class="name">
-              <h5>
-                Alex Den
-              </h5>
-            </div>
-            <div class="img-box">
-              <img src="images/t3.jpg" alt="">
-            </div>
-            <div class="social_box">
-              <a href="">
-                <img src="images/facebook-logo.png" alt="">
-              </a>
-              <a href="">
-                <img src="images/twitter.png" alt="">
-              </a>
-              <a href="">
-                <img src="images/instagram-logo.png" alt="">
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- end trainer section -->
-
-  <!-- contact section -->
-
-  <section class="contact_section ">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-6 px-0">
-          <div class="img-box">
-            <img src="images/contact-img.jpg" alt="">
-          </div>
-        </div>
-        <div class="col-lg-5 col-md-6">
-          <div class="form_container pr-0 pr-lg-5 mr-0 mr-lg-2">
-            <div class="heading_container">
-              <h2>
-                Contact Us
-              </h2>
-            </div>
-            <form action="">
-              <div>
-                <input type="text" placeholder="Name" />
-              </div>
-              <div>
-                <input type="email" placeholder="Email" />
-              </div>
-              <div>
-                <input type="text" placeholder="Phone Number" />
-              </div>
-              <div>
-                <input type="text" class="message-box" placeholder="Message" />
-              </div>
-              <div class="d-flex ">
-                <button>
-                  Send
-                </button>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- end contact section -->
-
-  <!-- info section -->
-  <section class="info_section layout_padding2">
-    <div class="container">
-      <div class="info_items">
-        <a href="">
-          <div class="item ">
-            <div class="img-box box-1">
-              <img src="" alt="">
-            </div>
-            <div class="detail-box">
-              <p>
-                Location
-              </p>
-            </div>
-          </div>
-        </a>
-        <a href="">
-          <div class="item ">
-            <div class="img-box box-2">
-              <img src="" alt="">
-            </div>
-            <div class="detail-box">
-              <p>
-                +02 1234567890
-              </p>
-            </div>
-          </div>
-        </a>
-        <a href="">
-          <div class="item ">
-            <div class="img-box box-3">
-              <img src="" alt="">
-            </div>
-            <div class="detail-box">
-              <p>
-                demo@gmail.com
-              </p>
-            </div>
-          </div>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- end info_section -->
-
-  <!-- footer section -->
-  <footer class="container-fluid footer_section">
-    <p>
-      &copy; 2020 All Rights Reserved. Design by
-      <a href="https://html.design/">Free Html Templates</a>
-    </p>
-  </footer>
-  <!-- footer section -->
-
-  <script src="js/jquery-3.4.1.min.js"></script>
-  <script src="js/bootstrap.js"></script>
+<div class="footer">
+  <p>Resize the browser window to see how the content respond to the resizing.</p>
+</div>
 
 </body>
-
 </html>
+
