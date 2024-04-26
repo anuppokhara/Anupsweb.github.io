@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+html {
+  font-family: "Lucida Sans", sans-serif;
+}
+
+.header {
+  background-color: #9933cc;
+  color: #ffffff;
+  padding: 15px;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  padding: 8px;
+  margin-bottom: 7px;
+  background-color: #33b5e5;
+  color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.menu li:hover {
+  background-color: #0099cc;
+}
+
+.aside {
+  background-color: #33b5e5;
+  padding: 15px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 14px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.footer {
+  background-color: #0099cc;
+  color: #ffffff;
+  text-align: center;
+  font-size: 12px;
+  padding: 15px;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>RUKUM EAST</h1>
+</div>
+
+<div class="row">
+  <div class="col-3 col-s-3 menu">
+    <ul>
+      <li>The Flight</li>
+      <li>The Mountatin</li>
+      <li>The Rivers</li>
+      <li>The Food</li>
+    </ul>
+  </div>
+
+  <div class="col-6 col-s-9">
+    <h1>About</h1>
+    <p>Eastern Rukum (Nepali: पूर्वी रुकुम) is a mountain district of Lumbini Province of Nepal situated along the Dhaulagiri mountain range.[1][2] It is also the only mountain district of the province with its tallest mountain Putha Hiunchuli (Dhaulagiri VII) situated in the west end of Dhaulagiri II mountain chain, at an elevation of 7,246 meters.[3] The drainage source of ancient Airavati river, one of the five sacred rivers of Buddhism, lies in the lesser Himalayas of the district.[4] With a Dhaulagiri mountain range, lakes, rich Magar culture and its political history, Eastern Rukum has been among the top travel destinations of Nepal as designated by the Government of Nepal.[5][6]
+
+The district is known for having 52 ponds and 53 hills.[7] From 1996 to 2006, Eastern Rukum - a region with Magar majority - was one of the historical base area of the People's War of Nepal providing many foot soldiers, commanders, prominent leaders and martyrs during the war which in turn pivoted the country into a democratic Federal republic in 2008.[8] Guerilla trekking route has also been developed in the district as an adventure tourism following the past trails of the rebels in the base of Himalayas providing experiences of scenic landscapes, Dhaulagiri mountain ranges and rich Kham Magar culture.[9][10] In 2018, the district was labelled among the "fully literate" districts of the country, with a literacy rate of over 95%, showing a significant post-conflict development.[11][12] After Palpa district (53% Magar population), Eastern Rukum has the second largest Magar population in Nepal as a percentage of the total population (51% Magar population).[13]
+
+Though successful in maintaining various levels of autonomy, independence and preservation of Kham Magar culture even during ancient and medieval Nepal, the region's structure were altered during the rule of Rana dynasty as well as during Panchayat era. Before 1975, substantial portion of Eastern Rukum was territorially merged with Palpa district during the Rana regime and with Baglung District during Panchayat.[14][15] On 20 September 2015, Eastern Rukum was created as a new district after the state's reconstruction of administrative divisions splitting Rukum District into Western Rukum and Eastern Rukum.</p>
+  </div>
+
+  <div class="col-3 col-s-12">
+    <div class="aside">
+      <h2>What?</h2>
+      <p>Rukum is a district on the Lumbini Province of Nepal.</p>
+      <h2>Where?</h2>
+      <p>Sanoveri is a river in the sisne range.</p>
+      <h2>How?</h2>
+      <p>You can reach Rukum airport from Kathmandu and Nepalgunj.</p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <p>Resize the browser window to see how the content respond to the resizing.</p>
+</div>
+
+</body>
+</html>
+
